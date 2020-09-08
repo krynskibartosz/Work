@@ -1,0 +1,37 @@
+Rendre un élément draggable
+    → mettre l'attribut draggable à true sur l'élément en question
+
+L'élément déplaçable contient 2 événement de drag
+    1) dragstart → lorsque l'élément commence à se déplacer
+    2) dragend → déplacement terminer → succès ou non
+
+dataTransfer (récupère les informations relatif au déplacement en cours)
+
+dataTransfer est généralement utilisée au travers de deux événements:
+    1) dragstart
+    2) drop
+
+il permet de réaliser 3 actions (toutes facultatives):
+    1) Sauvegarder une chaîne de caractères qui sera transmise à l'élément HTML qui accueillera l'élément déplacé.
+       La méthode à utiliser est setData('MIME/types', 'string').
+
+    2) Définir une image utilisée lors du déplacement. La méthode concernée est setDragImage()
+
+    3) Spécifier le type de déplacement autorisé avec la propriété effectAllowed
+
+Définir une zone de drop
+
+    La zone de drop prend généralement 4 événements.
+        1) dragenter, qui se déclenche lorsqu'un élément en cours de déplacement entre dans la zone de drop.
+
+        2) dragover, qui se déclenche lorsqu'un élément en cours de déplacement se déplace dans la zone de drop.
+
+        3) dragleave, qui se déclenche lorsqu'un élément en cours de déplacement quitte la zone de drop.
+
+        4)  drop, qui se déclenche lorsqu'un élément en cours de déplacement est déposé dans la zone de drop.
+
+    Par défaut, le navigateur interdit de déposer un quelconque élément où que ce soit dans la page Web.
+    Notre but est donc d'annuler cette action par défaut, et qui dit « annulation d'une action par défaut », dit preventDefault()
+
+    C'est dans la zone de drop qu'on défini les functions qui vont gerer les éléments qu'elle reçoit
+

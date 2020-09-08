@@ -1,0 +1,40 @@
+DOM
+dataSet
+
+<li data-{name}>text</li>
+document.querySelector('li').dataset.data{name}.{method-built-in}
+
+
+To select an element into the console.
+    1) click on an DOM element
+    2) tape : ${0} → in the console
+    then we'll have acces to all js property of this element
+    example:
+        ${0}.getBoundingClientReact();
+        show us the position and dimension of the element
+
+Scrolling méthode
+
+    1) .scrollIntoView(); // jump to an element(without animation)
+        with animation
+        arguments → {behaviour: 'smooth'}
+
+    2) .scrollTo
+        argument
+            {position: number, behaviour: 'smooth'}
+            {top: 50}
+
+Html got a <template> tag
+    → allow us to do component that'll render by javascript
+
+
+We got different built-in Object that's allow us to have the
+    - Location & history
+    - navigator(géolocalization)
+    - Date
+    - Error
+
+
+https://source.unsplash.com/random/150x150
+
+Permet d'avoir des images aléatoire de taile 150x150

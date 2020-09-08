@@ -34,4 +34,3 @@ Définir une zone de drop
     Notre but est donc d'annuler cette action par défaut, et qui dit « annulation d'une action par défaut », dit preventDefault()
 
     C'est dans la zone de drop qu'on défini les functions qui vont gerer les éléments qu'elle reçoit
-
